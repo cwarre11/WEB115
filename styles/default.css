@@ -12,9 +12,9 @@ h1, h2, h3 {
 	text-align: center;
 }
 main img {
-	width:25%;
+	width: 25%;
 	height: auto;
-	text-align: center;
+	text-align: center; 
 }
 figure {
 	width: 100%;
