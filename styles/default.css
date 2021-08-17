@@ -57,11 +57,11 @@ address {
 	font-size: 25px;
 }
 a:link {
-  color: hotpink;
+  color: purple;
 }
 
 a:visited {
-  color: red;
+  color: green;
 }
 
 a:hover {
