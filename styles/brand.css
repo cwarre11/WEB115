@@ -1,0 +1,63 @@
+body {
+  margin: 30px;
+  font-family: courier;
+  background-color: #F0F8FF; 
+  color: #808080;
+}
+h1, h2, h3 {
+	color: #808080;
+	padding-top: 20px;
+    padding-bottom: 20px;
+	text-align: center;
+}
+h1 {
+	background-color: #E6E6FA;
+}
+main img {
+	width: 25%;
+	height: auto;
+	text-align: center;
+}
+.topnav {
+	text-align: center;
+	font-size: 18px;
+}
+figure {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin: auto;
+}
+figcaption {
+	font-style: italic;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+ul {
+	text-align: center;
+}
+footer {
+	text-align: center;
+}
+footer img {
+	width: 88px;
+	height: auto;
+}
+
+a:link {
+  color: purple;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: white;
+}
