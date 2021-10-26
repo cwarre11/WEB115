@@ -1,73 +1,90 @@
-body {
+body 
+{
   margin: 30px;
   font-family: courier;
   background-color: #F0F8FF; 
   color: #808080;
 }
-h1, h2, h3 {
+h1, h2, h3 
+{
 	background-color: #E6E6FA;
 	color: #808080;
 	padding-top: 20px;
     padding-bottom: 20px;
 	text-align: center;
 }
-main img {
+main img 
+{
 	width: 25%;
 	height: auto;
 	text-align: center; 
 }
-figure {
+figure 
+{
 	width: 100%;
 	height: auto;
 	text-align: center;
 	margin: auto;
 }
-figcaption {
+figcaption 
+{
 	font-style: italic;
 	text-align: center;
 }
-p {
+p 
+{
 	text-align: center;
 }
-footer {
+footer 
+{
 	text-align: center;
 }
-footer img {
+footer img 
+{
 	width: 88px;
 	height: auto;
 }
-th, td {
+th, td 
+{
 	border: 1px solid black;
 }
-th {
+th 
+{
 	font-weight: bold;
 	font-size: 30px;
 }
-td {
+td 
+{
 	font-size: 20px;
 }
-table {
+table 
+{
 	border: 3px solid black;
 	margin: auto;
 	width: 70%;
 }
-address {
+address 
+{
 	text-align: center;
 	font-weight: bold;
 	font-size: 25px;
 }
-a:link {
+a:link 
+{
   color: purple;
 }
 
-a:visited {
+a:visited 
+{
   color: green;
 }
 
-a:hover {
+a:hover 
+{
   color: orange;
 }
 
-a:active {
+a:active 
+{
   color: white;
 }
