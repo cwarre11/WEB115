@@ -1,153 +1,240 @@
-3*4
-12
+<!DOCTYPE html>
+<html lang="en">
 
-12^2
-14
+<head>
+    <meta charset="utf-8" />
+    <title>Console Play</title>
+    <link rel="stylesheet" type="text/css" href="styles/brand.css" />
+</head>
 
-int(12+2)
-{ int is not defined }
-
-int("12" + "2")
-{ int is not defined }
-
-3*(4-1)
-9
-
-sum([2,4,6])
-{ sum is not defined }
-
-math.pow(2,12)
-{ math is not defined }
-
-Math.pow(2,12)
-4096
-
-12=12
-{ Invalid left-hand side in assignment expression (1:14) }
-
-12 = 12
-{ Invalid left-hand side in assignment expression (1:14) }
-
-12 === 12
-true
-
-12/12
-1
-
-4%3
-1
-
-144-143
-1
-
-string="My name is Chloe"
-My name is Chloe
-
-float = 2
-2
-
-int = 34
-34
-
-int + float
-36
-
-name1 = "Chloe
-{ Unterminated string constant (1:22) }
-
-name1 = "Chloe"
-Chloe
-
-name2 = "Warren"
-Warren
-
-name1 + name2
-ChloeWarren
-
-name1 + " " + name2
-Chloe Warren
-
-age = 23
-23
-
-print("My name is " + name1 + " " + name2 + ". I am " + age + "years old")
-undefined
-
-str = "My name is " + name1 + " " + name2 + ". I am " + age + "years old"
-My name is Chloe Warren. I am 23years old
-
-"My name is " + name1 + " " + name2 + ". I am " + age + " years old"
-My name is Chloe Warren. I am 23 years old
-
-var name1 + name2
-{ Unexpected token, expected ; (1:24) }
-
-a= 2
-2
-
-b = 3
-3
-
-c = 4
-4
-
-a + b + c
-9
-
-a * b * c
-24
-
-a / b / c
-0.16666666666666666
-
-a * b /c
-1.5
-
-a (b + c)
-{ a is not a function }
-
-a + (b + c)
-9
-
-math.min(a,b,c)
-{ math is not defined }
-
-Math.min(a,b,c)
-2
-
-Math.max(a,b,c)
-4
-
-if (a + b) = 5 {
-{ Unexpected token (1:25) }
-
-if (a + b) = 5 {
-print (Correct!)
-{ Unexpected token (1:25) }
-
-if (a + b) = 5 {
-print (Correct!)
-}
-{ Unexpected token (1:25) }
-
-alert (name1 + name2)
-undefined
-
-alert (name1 + " " + name2)
-undefined
-
-string ("I'm way behind on homework")
-{ string is not a function }
-
-string = "I'm way behind on homework"
-I'm way behind on homework
-
-prompt("I need to get it together")
-Yes
-
-console.log("I am struggling")
-I am struggling
-undefined
-
-console.log("My name is " name1 + name2)
-{ Unexpected token, expected , (1:40) }
+<body>
+    <header>
+        <h1>Chloe Warren</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Console Play</h2>
+			<br>
+        </div>
+		<p class="input">3*4</p>
+		<p class="output">12</p>
+		<br>
+		
+		<p class="input">12^2</p>
+		<p class="output">14</p>
+		<br>
+		
+		<p class="input">int(12+2)</p>
+		<p class="output">{ int is not defined }</p>
+		<br>
+		
+		<p class="input">int("12" + "2")</p>
+		<p class="output">{ int is not defined }</p>
+		<br>
+		
+		<p class="input">3*(4-1)</p>
+		<p class="output">9</p>
+		<br>
+		
+		<p class="input">sum([2,4,6])</p>
+		<p class="output">{ sum is not defined }</p>
+		<br>
+		
+		<p class="input">math.pow(2,12)</p>
+		<p class="output">{ math is not defined }</p>
+		<br>
+		
+		<p class="input">Math.pow(2,12)</p>
+		<p class="output">4096</p>
+		<br>
+		
+		<p class="input">12=12</p>
+		<p class="output">{ Invalid left-hand side in assignment expression (1:14) }</p>
+		<br>
+		
+		<p class="input">12 = 12</p>
+		<p class="output">{ Invalid left-hand side in assignment expression (1:14) }</p>
+		<br>
+		
+		<p class="input">12 === 12</p>
+		<p class="output">true</p>
+		<br>
+		
+		<p class="input">12/12</p>
+		<p class="output">1</p>
+		<br>
+		
+		<p class="input">4%3</p>
+		<p class="output">1</p>
+		<br>
+		
+		<p class="input">144-143</p>
+		<p class="output">1</p>
+		<br>
+		
+		<p class="input">string="My name is Chloe"</p>
+		<p class="output">My name is Chloe</p>
+		<br>
+		
+		<p class="input">float = 2</p>
+		<p class="output">2</p>
+		<br>
+		
+		<p class="input">int = 34</p>
+		<p class="output">34</p>
+		<br>
+		
+		<p class="input">int + float</p>
+		<p class="output">36</p>
+		<br>
+		
+		<p class="input">name1 = "Chloe</p>
+		<p class="output">{ Unterminated string constant (1:22) }</p>
+		<br>
+		
+		<p class="input">name1 = "Chloe"</p>
+		<p class="output">Chloe</p>
+		<br>
+		
+		<p class="input">name2 = "Warren"</p>
+		<p class="output">Warren</p>
+		<br>
+		
+		<p class="input">name1 + name2</p>
+		<p class="output">ChloeWarren</p>
+		<br>
+		
+		<p class="input">name1 + " " + name2</p>
+		<p class="output">Chloe Warren</p>
+		<br>
+		
+		<p class="input">age = 23</p>
+		<p class="output">23</p>
+		<br>
+		
+		<p class="input">print("My name is " + name1 + " " + name2 + ". I am " + age + "years old")</p>
+		<p class="output">undefined</p>
+		<br>
+		
+		<p class="input">str = "My name is " + name1 + " " + name2 + ". I am " + age + "years old"</p>
+		<p class="output">My name is Chloe Warren. I am 23years old</p>
+		<br>
+		
+		<p class="input">"My name is " + name1 + " " + name2 + ". I am " + age + "years old"</p>
+		<p class="output">My name is Chloe Warren. I am 23 years old</p>
+		<br>
+		
+		<p class="input">var name1 + name2</p>
+		<p class="output">{ Unexpected token, expected ; (1:24) }</p>
+		<br>
+		
+		<p class="input">a= 2</p>
+		<p class="output">2</p>
+		<br>
+		
+		<p class="input">b = 3</p>
+		<p class="output">3</p>
+		<br>
+		
+		<p class="input">c = 4</p>
+		<p class="output">4</p>
+		<br>
+		
+		<p class="input">a + b + c</p>
+		<p class="output">9</p>
+		<br>
+		
+		<p class="input">a * b * c</p>
+		<p class="output">24</p>
+		<br>
+		
+		<p class="input">a / b / c</p>
+		<p class="output">0.16666666666666666</p>
+		<br>
+		
+		<p class="input">a * b / c</p>
+		<p class="output">1.5</p>
+		<br>
+		
+		<p class="input">a (b+c)</p>
+		<p class="output">{ a is not a function }</p>
+		<br>
+		
+		<p class="input">a + (b + c)</p>
+		<p class="output">9</p>
+		<br>
+		
+		<p class="input">math.min(a,b,c)</p>
+		<p class="output">{ math is not defined }</p>
+		<br>
+		
+		<p class="input">Math.min(a,b,c)</p>
+		<p class="output">2</p>
+		<br>
+		
+		<p class="input">Math.max(a,b,c)</p>
+		<p class="output">4</p>
+		<br>
+		
+		<p class="input">if (a + b) = 5 {</p>
+		<p class="output">{ Unexpected token (1:25) }</p>
+		<br>
+		
+		<p class="input">if (a + b) = 5 {</p>
+		<p class="input">print (Correct!)</p>
+		<p class="output">{ Unexpected token (1:25) }</p>
+		<br>
+		
+		<p class="input">if (a + b) = 5 {</p>
+		<p class="input">print (Correct!)</p></p>
+		<p class="input">}</p></p>
+		<p class="output">{ Unexpected token (1:25) }</p>
+		<br>
+		
+		<p class="input">alert (name1 + name2)</p>
+		<p class="output">undefined</p>
+		<br>
+		
+		<p class="input">alert (name1 + " " + name2)</p>
+		<p class="output">undefined</p>
+		<br>
+		
+		<p class="input">string ("I'm way behind on homework")</p>
+		<p class="output">{ string is not a function }</p>
+		<br>
+		
+		<p class="input">string "I'm way behind on homework"</p>
+		<p class="output">I'm way behind on homework</p>
+		<br>
+		
+		<p class="input">prompt("I need to get it together")</p>
+		<p class="output">Yes</p>
+		<br>
+		
+		<p class="input">console.log("I am struggling")</p>
+		<p class="input">I am struggling</p>
+		<p class="output">undefined</p>
+		<br>
+		
+		<p class="input">console.log("My name is " name1 + name2)</p>
+		<p class="output">{ Unexpected token, expected , (1:40) }</p>
+		<br>
+		
+		</main>
+    <br>
+    <footer>
+      <nav>
+       <a href="https://github.com/cwarre11">Github Account</a> |
+		<a href="https://cwarre11.github.io/">Github IO</a> |
+		<a href="https://cwarre11.github.io/web115">Github Course</a> |
+		<a href="https://www.freecodecamp.org/cwarre11">FreeCodeCamp</a> |
+		<a href="https://www.codecademy.com/profiles/Fluffolophagus">Codecademy</a> |
+		<a href="https://jsfiddle.net/user/cwarre11/fiddles/">JSFiddle</a> |
+		<a href="https://www.linkedin.com/in/chloe-warren-3481541a0/">LinkedIn</a> 
+      </nav>
+      		<p><strong>Designed by ChloeWar Inc.</strong></p>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcwarre11.github.io%2Fweb115%2Ftoc.html">Validate HTML</a> |
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcwarre11.github.io%2Fweb115%2Ftoc.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">Validate CSS</a>
+    </footer>
+  </body>
+</html>
