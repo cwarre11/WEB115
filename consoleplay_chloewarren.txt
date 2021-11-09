@@ -1,0 +1,153 @@
+3*4
+12
+
+12^2
+14
+
+int(12+2)
+{ int is not defined }
+
+int("12" + "2")
+{ int is not defined }
+
+3*(4-1)
+9
+
+sum([2,4,6])
+{ sum is not defined }
+
+math.pow(2,12)
+{ math is not defined }
+
+Math.pow(2,12)
+4096
+
+12=12
+{ Invalid left-hand side in assignment expression (1:14) }
+
+12 = 12
+{ Invalid left-hand side in assignment expression (1:14) }
+
+12 === 12
+true
+
+12/12
+1
+
+4%3
+1
+
+144-143
+1
+
+string="My name is Chloe"
+My name is Chloe
+
+float = 2
+2
+
+int = 34
+34
+
+int + float
+36
+
+name1 = "Chloe
+{ Unterminated string constant (1:22) }
+
+name1 = "Chloe"
+Chloe
+
+name2 = "Warren"
+Warren
+
+name1 + name2
+ChloeWarren
+
+name1 + " " + name2
+Chloe Warren
+
+age = 23
+23
+
+print("My name is " + name1 + " " + name2 + ". I am " + age + "years old")
+undefined
+
+str = "My name is " + name1 + " " + name2 + ". I am " + age + "years old"
+My name is Chloe Warren. I am 23years old
+
+"My name is " + name1 + " " + name2 + ". I am " + age + " years old"
+My name is Chloe Warren. I am 23 years old
+
+var name1 + name2
+{ Unexpected token, expected ; (1:24) }
+
+a= 2
+2
+
+b = 3
+3
+
+c = 4
+4
+
+a + b + c
+9
+
+a * b * c
+24
+
+a / b / c
+0.16666666666666666
+
+a * b /c
+1.5
+
+a (b + c)
+{ a is not a function }
+
+a + (b + c)
+9
+
+math.min(a,b,c)
+{ math is not defined }
+
+Math.min(a,b,c)
+2
+
+Math.max(a,b,c)
+4
+
+if (a + b) = 5 {
+{ Unexpected token (1:25) }
+
+if (a + b) = 5 {
+print (Correct!)
+{ Unexpected token (1:25) }
+
+if (a + b) = 5 {
+print (Correct!)
+}
+{ Unexpected token (1:25) }
+
+alert (name1 + name2)
+undefined
+
+alert (name1 + " " + name2)
+undefined
+
+string ("I'm way behind on homework")
+{ string is not a function }
+
+string = "I'm way behind on homework"
+I'm way behind on homework
+
+prompt("I need to get it together")
+Yes
+
+console.log("I am struggling")
+I am struggling
+undefined
+
+console.log("My name is " name1 + name2)
+{ Unexpected token, expected , (1:40) }
